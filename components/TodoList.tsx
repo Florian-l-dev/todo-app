@@ -6,7 +6,7 @@ interface Todo {
   id: string;
   title: string;
   completed: boolean;
-  createdAt: string;
+  createdAt: string | Date;
 }
 
 export function TodoList({ initialTodos }: { initialTodos: Todo[] }) {
